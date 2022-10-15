@@ -50,6 +50,10 @@ void /* Returns void -> Nothing */ main() /* Main Function() */ {
   print(sc.x);
   sc.printStuff();
   sc.publish();
+
+  // Named parameters
+  // Any order
+  print(mul(n1: 5, n2: 5));
 }
 
 // User Defined function
@@ -58,6 +62,8 @@ int sum(int a, int b) {
   int sum = a + b;
   return sum;
 }
+
+int mul({int n1 = 0, int n2 = 0}) => n1 * n2;
 
 // Arrow Functions
 // Used when returning a one liner value

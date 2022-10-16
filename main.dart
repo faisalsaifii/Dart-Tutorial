@@ -54,6 +54,11 @@ void /* Returns void -> Nothing */ main() /* Main Function() */ {
   // Named parameters
   // Any order
   print(mul(n1: 5, n2: 5));
+
+  // Map
+  Map student = {'name': 'faisal', 'age': 20};
+  print(student);
+  print(student['name']);
 }
 
 // User Defined function
